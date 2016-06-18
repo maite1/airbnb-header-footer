@@ -1,0 +1,327 @@
+/*gere la video*/
+video#bgvid {
+  position: fixed; right: 0; bottom: 0;
+  min-width: 100%; min-height: 50%;
+  width: auto; height: auto; z-index: -100;
+/*  background-size: cover;*/
+}
+ div{
+   text-align:center;
+ }
+/*titre*/
+.size{
+  font-size: 60px;
+  font-family: sans-serif;
+  color: white;
+}
+
+  .sous-titre{
+  font-family: sans-serif;
+  color: white;
+}
+
+/*bloc de div */
+#menu{
+  width: 80%;
+  height: 100px;
+  float: right;
+  margin-top:15px;
+}
+
+/*menu responsive qui ne marche pas*/
+.show-menu {
+    background:  none repeat scroll 0 0;
+    color: #fff;
+    display: none;
+    font-family: sans-serif;
+    padding: 10px 0;
+    text-align: center;
+    text-decoration: none;
+}
+input[type="checkbox"] {
+    display: none;
+}
+
+@media screen and (max-width: 760px) {
+ul {
+    display: none;
+    position: static;
+}
+li {
+    margin-bottom: 1px;
+}
+ul li, li a {
+    width: 100%;
+}
+.show-menu {
+    display: block;
+}
+}
+
+@media only screen and (max-width: 750px) {
+  .site-pusher, .site-container { height: 100%; }
+  .site-container { overflow: hidden; }
+  .site-pusher {
+    transition-duration: 0.3s;
+    transform: translateX(0px);
+  }
+
+  .site-content {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding-top: 0;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .header { position: static; }
+
+
+  .header__icon {
+    position: relative;
+    display: block;
+    float: right;
+    width: 50px;
+    height: 66px;
+    cursor: pointer; }
+    .header__icon:after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 1rem;
+      height: 0;
+      top: 16px;
+      left: 15px;
+      box-shadow: 0 10px 0 1px white, 0 16px 0 1px white, 0 22px 0 1px white; }
+
+  .menu {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    width: 450px;
+    transform: translateX(450px);
+  }
+
+    .menu a {
+      display: block;
+      height: 40px;
+      text-align: center;
+      line-height: 40px;
+      border-bottom: 1px solid ;
+    }
+}
+
+#logo{
+  width: 20%;
+  height: 100px;
+  float:left;
+  margin-top:15px;
+}
+
+#div{
+    padding-top:110px;
+  padding-bottom: 110px;
+  width: 100%;
+  height: 200px;
+}
+
+#titre{
+  margin: 30px;
+}
+#player{
+  margin: 30px;
+}
+
+#div2{
+  font-family: sans-serif;
+  color:white;
+  opacity: 0.5;
+  background-color:#000;
+  width: 100%;
+  height: 150px;
+  color: white;
+  margin-top: 10px;
+  padding-top:20px;
+  padding-bottom: 20px;
+
+
+}
+
+/*Menu*/
+ul {
+ padding:0;
+ margin:0;
+ list-style-type:none;
+ color: #fff;
+ font-family:sans-serif;
+ margin-right: 20px;
+ margin-top: 10px;
+ font-size: 12px;
+ }
+
+li {
+ margin-left:2px;
+ float: right;
+ }
+
+.bouton{
+  background-color: transparent;
+  color: #fff;
+  font-size:12px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.lien{
+  text-decoration: none;
+  color:#fff;
+}
+
+ a:hover .bouton {
+  background-color: #000;
+  opacity: 0.5;
+}
+
+.liste{
+  padding-top: 7px;
+}
+
+.player{
+  text-decoration: none;
+  opacity:0.5;
+
+}
+
+a:hover .player{
+  background:url("player.png") no-repeat scroll 0 0 transparent;
+  opacity:1;
+
+}
+
+.center-block {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/*formulaire*/
+
+.form-inline {
+    text-align: center;
+      opacity:1;
+
+}
+
+ button, input {
+  font-family : sans-serif bold;
+  font-size   : 100%;
+  height: 47px;
+  font-family: sans-serif;
+ }
+
+
+.button:hover {
+
+    text-decoration: none;
+    height: 47px;
+
+
+    }
+
+ #voyageurs {
+        width: 140px;
+        height: 57px;
+        font-family: sans-serif;
+    }
+ #OU {
+        width:450px;
+        height:45px;
+        font-family: sans-serif;
+    }
+#arrivée {
+        width:200px;
+        height:57px;
+        font-family: sans-serif;
+    }
+    #départ {
+         height:50px;
+         font-family: sans-serif;
+    }
+
+    #fleche {
+       width:40px;
+       color:black;
+       height:35px;
+   }
+
+   #Rechercher {
+       border-style: solid;
+       height: 57px;
+      font-family: sans-serif;
+       width: 150px;
+       background-color:#E87489;
+       color: white;
+   }
+
+   #Rechercher:hover {
+      text-decoration: none;
+     font-family: sans-serif;
+   }
+
+   a:link{
+ text-decoration:none;
+}
+
+/*footer*/
+
+.dav2{
+    margin:auto;
+    width:40%;
+    float:right;
+    margin-top: 21px;
+    color:white;
+    text-align: left;
+}
+
+.right{
+  float:right;
+}
+
+.left{
+  float:left;
+}
+.container-fluid{
+    width:100%;
+    background-color: #544E4E;
+    color: black;
+}
+
+.dav3{
+   width:100%;
+   margin-left: 70px;
+  margin-top: 20px;
+   color:white;
+   text-align: left;
+}
+.dav4{
+    margin-right: 50px;
+   float: right;
+    margin-top: 1px;
+    color:white;
+    text-align: left;
+}
+.span {
+    color:white;
+}
+
+#corps{
+  background-color: white;
+  width: 100%;
+  height: 800px;
+
+}
